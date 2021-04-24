@@ -1,0 +1,8 @@
+streamlit
+numpy
+pandas as pd
+matplotlib
+Pillow
+scipy
+glob
+re
