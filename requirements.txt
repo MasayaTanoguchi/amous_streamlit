@@ -1,6 +1,6 @@
 streamlit
 numpy
-pandas as pd
+pandas
 matplotlib
 Pillow
 scipy
