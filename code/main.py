@@ -101,9 +101,12 @@ if __name__ == '__main__':
     personality_label = personality_result[player]
     personality_caption = get_personality_caption(personality_label)
     
-    IMG_PATHS = glob.glob(IMG_FOLDER_PATH + '/*')
-    labels = [re.sub(IMG_FOLDER_PATH+'|'+'\\\\|.jpg','',PATH) for PATH in IMG_PATHS]
-    
+    #IMG_PATHS = glob.glob(IMG_FOLDER_PATH + '/*')
+    #labels = [re.sub(IMG_FOLDER_PATH+'|'+'\\\\|.jpg','',PATH) for PATH in IMG_PATHS]
+    labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N']
+    IMG_PATHS = [IMG_FOLDER_PATH + '/' + l + '.jpg' for l in labels]
+
+
     st.subheader('%sさん！あなたの性格は....'%player)
     
     st.header(personality_caption)
