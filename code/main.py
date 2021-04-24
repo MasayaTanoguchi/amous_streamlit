@@ -88,8 +88,8 @@ def get_personality_caption(label):
 
 if __name__ == '__main__':
     
-    CSV_PATH = '../data/csv/among_us_agg_list.xlsx'
-    IMG_FOLDER_PATH = '../data/img'
+    CSV_PATH = 'data/csv/among_us_agg_list.xlsx'
+    IMG_FOLDER_PATH = 'data/img'
     
     df = preprocess_table(CSV_PATH)
     df_agg = get_agg_table(df)
