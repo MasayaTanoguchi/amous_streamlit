@@ -4,5 +4,3 @@ pandas
 matplotlib
 Pillow
 scipy
-glob
-re
