@@ -8,7 +8,7 @@ import glob
 import re
 
 def preprocess_table(CSV_PATH):
-    df = pd.read_excel(CSV_PATH)
+    df = pd.read_csv(CSV_PATH, encoding='cp932')
     df = df.rename(columns={'Unnamed: 0':'メンバー'})
     df['メンバー'] = df['メンバー'].map(lambda x : x.split('\n')[0])
     
@@ -88,7 +88,7 @@ def get_personality_caption(label):
 
 if __name__ == '__main__':
     
-    CSV_PATH = 'data/csv/among_us_agg_list.xlsx'
+    CSV_PATH = 'data/csv/among_us_agg_list.csv'
     IMG_FOLDER_PATH = 'data/img'
     
     df = preprocess_table(CSV_PATH)
