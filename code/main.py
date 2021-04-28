@@ -90,7 +90,9 @@ if __name__ == '__main__':
     
     CSV_PATH = 'data/csv/among_us_agg_list.csv'
     IMG_FOLDER_PATH = 'data/img'
-    
+    IMG_EXPLAIN_PATH = IMG_FOLDER_PATH + '/Z_explain.JPG'
+    IMG_LIST_PATH = IMG_FOLDER_PATH + '/Z_list.JPG'
+
     df = preprocess_table(CSV_PATH)
     df_agg = get_agg_table(df)
     df_personality = compute_personality_table(df_agg)
@@ -115,3 +117,11 @@ if __name__ == '__main__':
     img_path = img_path_dict[personality_label]
     image = Image.open(img_path)
     st.image(image,use_column_width=True)
+
+    st.header('性格一覧')
+    image_list = Image.open(IMG_LIST_PATH)
+    st.image(image_list, use_column_width=True)
+    
+    st.header('性格の説明')
+    image_explain = Image.open(IMG_EXPLAIN_PATH)
+    st.image(image_explain, use_column_width=True)
