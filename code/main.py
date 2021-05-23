@@ -101,7 +101,7 @@ if __name__ == '__main__':
     # UIの基本設定
     st.title('あもあす性格診断')
     #st.write('© Copyright 2021, aiko eshiro - ゆるふわAmongUs村')
-    st.write('made by aiko eshiro - ゆるふわAmongUs村, 2021')
+    st.write('made by aiko.eshiro chisato.sasaki masaya.tanoguchi - ゆるふわAmongUs村, 2021')
     image_intro = Image.open(IMG_INTRO_PATH)
     st.image(image_intro,use_column_width=True)
 
