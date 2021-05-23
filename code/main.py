@@ -69,15 +69,15 @@ def compute_personality(df_personality, df_base):
     return personality_result
 
 def get_personality_caption(label):
-    personality = {'A':{'main':'フリーザータイプ','sub':'戦闘力のスーパーインフレ','metrics':''},
+    personality = {'A':{'main':'最強タイプ','sub':'戦闘力のスーパーインフレ','metrics':''},
                    'B':{'main':'プロフェッショナル仕事の流儀タイプ','sub':'','metrics':''},
                    'C':{'main':'草葉の陰からこんにちはタイプ','sub':'骨の髄まで働かされ','metrics':''},
                    'D':{'main':'残虐なるサイコキラータイプ','sub':'最白位置で人肉食う','metrics':''},
                    'E':{'main':'華麗なる詐欺師タイプ','sub':'意のままにあなたを操る','metrics':''},
                    'F':{'main':'悩める堕天使タイプ','sub':'本当はもう殺したくない...','metrics':''},
                    'G':{'main':'最強の正直ものタイプ','sub':'このゲームは信じるゲーム','metrics':''},
-                   'H':{'main':'名探偵コナンガス','sub':'犯人はこの中にいる！','metrics':''},
-                   'I':{'main':'調査兵団タイプ','sub':'心臓を捧げ終えた','metrics':''},
+                   'H':{'main':'名探偵タイプ','sub':'犯人はこの中にいる！','metrics':''},
+                   'I':{'main':'勤勉兵士タイプ','sub':'','metrics':'我が身を捧げ切る！'},
                    'J':{'main':'器用貧乏タイプ','sub':'明日から多分本気出す','metrics':''},
                    'K':{'main':'全力社畜タイプ','sub':'月間残業時間天城越え','metrics':''},
                    'L':{'main':'大阪のおばちゃんタイプ','sub':'ただただ話したいだけ','metrics':''},
